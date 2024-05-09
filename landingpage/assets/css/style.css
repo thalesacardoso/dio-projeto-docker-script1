@@ -1,0 +1,424 @@
+/*
+DESENVOLVIDO POR: Thales A. Cardoso
+GITHUB: https://github.com/thalesacardoso
+DATA: 15/08/2023
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none; 
+    color: #23272A;   
+}
+
+html {
+    font-size: 16px;
+    color: #23272A;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 54.5px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 21.8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.luckiest {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+}
+
+
+/*******************************
+    ESTILO DO HEADER
+*******************************/
+header {
+    background-image: url(../imagens/Header-Background.svg);
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    padding: 40px 24px;
+}
+
+header .content {
+    width: 760px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    line-height: 56px;
+    width: 320px;
+    letter-spacing: 1px;
+}
+
+header p {
+    text-align: center;
+    color: white;
+}
+
+header .btn {
+    display: flex;
+    gap: 16px;
+}
+
+header .btn button {
+    height: 44px;
+    border-radius: 28px ;
+}
+
+button.bg-white {
+    background-color: white;
+    padding: 11px 24px;
+}
+
+button.bg-black {
+    background-color: #23272A;
+    color: white;
+    padding: 11px 16px;
+}
+
+/*******************************
+    ESTILO DO MAIN + SECTION
+*******************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main section {
+    padding: 40px 24px;
+}
+
+main section:nth-child(even){
+    background-color: #F6F6F6;
+}
+
+main .content {
+    max-width: 975px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+main .content .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+main section.secao-2 img {
+    order: 2;
+}
+
+main section.secao-4 .content {
+    max-width: 805px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section.secao-4 .content img {
+    order: 2;
+}
+
+main section.secao-4 .textos {
+    text-align: center;
+}
+
+main section.secao-4 h2.luckiest {
+    line-height: 40px;
+}
+
+/*******************************
+    ESTILO DO FOOTER
+*******************************/
+
+footer {
+    height: 135px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div img {
+    max-width: 100%;
+}
+
+
+/*******************************
+    VERSÃO P/ NOTEBOOK
+*******************************/
+
+@media screen and (min-width:800px) and (max-width: 1050px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+    
+    header .content {
+        width: 75vw;
+    }
+    
+    main .content {
+        width: 90vw;
+    }
+    
+    main .content .textos {
+        width: 38%;
+    }
+    
+    main .content img {
+        max-width: 62%;
+    }
+    
+    main section.secao-4 .content {
+        max-width: 62vw;
+    }
+    
+    main section.secao-4 .textos {
+        width: 100%;
+    }
+    
+    main section.secao-4 img {
+        max-width: 100%;
+    }
+    
+    main section.secao-4 h2.luckiest {
+        font-size: 2.3rem;
+    }
+    
+}
+
+
+/*******************************
+    VERSÃO P/ TABLET
+*******************************/
+
+@media screen and (min-width:450px) and (max-width: 799.99px) {
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+
+    header {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    header .content {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    header .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .btn button {
+        width: 100%;
+    }
+   
+    main {
+        gap: 5px;
+    }
+
+    main section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main .content {
+        width: 100%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .content .textos {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main .content img {
+        max-width: 100%;
+    }
+
+    main section.secao-2 img {
+        order: 0;
+    }
+    
+    main section.secao-4 .content {
+        max-width: 90%;
+    }
+    
+    main section.secao-4 .textos {
+        width: 100%;
+    }
+    
+    main section.secao-4 img {
+        max-width: 100%;
+    }
+    
+    main section.secao-4 h2.luckiest {
+        font-size: 2.3rem;
+    }
+
+    footer div {
+        width: 165px;
+    }
+}
+
+
+/*******************************
+    VERSÃO P/ SMARTPHONE
+*******************************/
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+
+    header {
+        height: auto;
+        padding: 70px 20px;
+    }
+    
+    header .content {
+        width: 100%;
+        margin: 0 auto;
+        align-items: start;
+    }
+
+    header .content h1.luckiest {
+        line-height: 32px;
+        text-align: left;
+        width: 200px;
+    }
+
+    header .content p {
+        text-align: left;
+    }
+
+    header .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .btn button {
+        width: 100%;
+    }
+   
+    main {
+        padding: 0;
+        gap: 5px;
+    }
+
+    main section {
+        padding: 40px 20px;
+    }
+
+    main .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    main .content .textos {
+        width: 100%;
+        text-align: left;
+        gap: 24px;
+    }
+    
+    main .content img {
+        max-width: 100%;
+    }
+
+    main section.secao-2 img {
+        order: 0;
+    }
+    
+    main section.secao-4 .content {
+        max-width: 100%;
+    }
+    
+    main section.secao-4 .textos {
+        width: 100%;
+        text-align: left;
+    }
+    
+    main section.secao-4 img {
+        max-width: 100%;
+    }
+    
+    main section.secao-4 h2.luckiest {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+
+    footer div {
+        width: 165px;
+    }
+
+    }
